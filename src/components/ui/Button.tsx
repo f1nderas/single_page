@@ -8,12 +8,12 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-transparent text-white border-2 border-white",
+        default: "bg-transparent text-white border-2 border-white ",
         link: "bg-blue-600 text-black hover:bg-blue-500",
         ghost: "border-2 gradient-btn",
       },
       size: {
-        default: "h-[60px] py-5 px-10",
+        default: "h-[60px] py-5 px-10 text-xs md:text-base",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
         icon: "h-10 w-10",
