@@ -1,6 +1,7 @@
 {
   "name": "single-page",
   "private": true,
+  "homepage": "https://f1nderas.github.io/single_page/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
