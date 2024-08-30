@@ -1,0 +1,11 @@
+.card {
+  @apply card-default  h-[150px]  pt-5 pb-[30px] px-5 flex flex-col justify-between;
+
+  > .text {
+    @apply max-w-[180px];
+  }
+
+  > .bottom {
+    @apply flex justify-between;
+  }
+}

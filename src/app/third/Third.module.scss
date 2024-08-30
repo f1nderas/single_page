@@ -1,0 +1,62 @@
+.wrapper {
+  @apply py-[100px] relative;
+
+  @media (min-width: 768px) {
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 600px;
+      height: 600px;
+      background-repeat: no-repeat;
+    }
+
+    &:before {
+      left: -13%;
+      top: 0;
+      background-image: url("/third/bg-phone-1.png");
+    }
+
+    &::after {
+      right: -13%;
+      bottom: 15%;
+      background-image: url("/third/bg-phone-2.png");
+    }
+  }
+}
+
+.title {
+  @apply title-default;
+}
+
+.subtitle {
+  @apply subtitle-default;
+}
+
+.list {
+  @apply grid gap-7 pb-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-4 md:pb-[200px];
+}
+
+.search {
+  @apply shadow-[0_0_15px_0_rgba(0,0,0,0.25)] py-9 px-10  items-center gap-12 justify-between bg-[#1e1e1e] rounded-xl mb-[50px] hidden md:flex;
+
+  > .text {
+    @apply text-lg font-bold uppercase;
+  }
+
+  > .select {
+    @apply relative flex-1 bg-[#444] rounded-[30px] py-3 px-10;
+  }
+}
+
+.model_list {
+  @apply grid grid-cols-1 gap-[30px] mb-[50px] sm:grid-cols-2 md:grid-cols-4;
+}
+
+.services {
+  @apply grid grid-cols-1 gap-[30px] mb-[70px] relative z-10 sm:grid-cols-2 md:grid-cols-4;
+}
+
+.help {
+  @apply grid grid-cols-1 gap-[30px] mb-10 relative z-10 md:grid-cols-2;
+}

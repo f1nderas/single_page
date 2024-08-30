@@ -1,0 +1,15 @@
+.card {
+  @apply card-default py-[30px] px-10 relative flex flex-col bg-no-repeat;
+
+  > .title {
+    @apply mb-[50px] text-sm font-bold md:text-2xl;
+  }
+
+  > .phone {
+    @apply mt-auto flex gap-[10px] font-bold items-center text-gradient text-xs md:text-2xl;
+  }
+
+  > .img {
+    @apply absolute -bottom-10  right-0 md:-right-12;
+  }
+}

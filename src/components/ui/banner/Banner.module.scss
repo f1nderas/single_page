@@ -1,0 +1,31 @@
+.wrapper {
+  @apply relative rounded-[15px] overflow-hidden flex items-center h-[190px];
+
+  > .line {
+    @apply absolute inset-0 z-0;
+  }
+
+  > .left {
+    @apply relative z-10 pt-[25px] pb-[35px] pl-10;
+
+    > .title {
+      @apply font-bold mb-5 text-sm md:text-2xl;
+    }
+
+    > .subtitle {
+      @apply font-semibold mb-[30px] text-xs md:text-base;
+    }
+
+    > .link {
+      @apply font-bold text-gradient flex gap-5 text-xs md:text-lg;
+    }
+  }
+
+  > .right {
+    @apply ml-auto;
+
+    > .img {
+      @apply h-full w-full object-cover;
+    }
+  }
+}

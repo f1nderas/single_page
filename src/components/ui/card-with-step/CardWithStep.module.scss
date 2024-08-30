@@ -1,0 +1,17 @@
+.card {
+  @apply card-default relative py-4 px-7 font-bold text-sm flex flex-col items-center gap-8 text-[#BDBDBD];
+
+  > .step {
+    @apply absolute -top-3 -left-3 shadow-[0_0_15px_0_rgba(0,0,0,0.25)] bg-[#1e1e1e] rounded-[10px] p-2 text-2xl font-extrabold;
+  }
+
+  > .img {
+    @apply size-52;
+    > img {
+      @apply w-full h-full object-contain;
+    }
+  }
+  > .text {
+    @apply text-center;
+  }
+}

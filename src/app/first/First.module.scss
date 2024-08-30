@@ -1,0 +1,26 @@
+.wrapper {
+  @apply pt-[66px] pb-16 bg-[url('/first/bg-first.svg')] md:pt-[136px];
+}
+
+.inner {
+  @apply flex justify-between flex-col-reverse md:flex-row;
+}
+
+.left {
+  @apply max-w-[670px] md:block flex flex-col items-center;
+
+  > .title {
+    @apply text-xl font-bold mb-[10px] leading-relaxed md:text-[52px] md:mb-5;
+    > span {
+      @apply text-[#1C6AAE];
+    }
+  }
+
+  > .text {
+    @apply font-normal text-sm mb-8 max-w-[630px] md:text-2xl md:mb-10;
+  }
+}
+
+.right {
+  @apply md:w-full justify-center flex;
+}

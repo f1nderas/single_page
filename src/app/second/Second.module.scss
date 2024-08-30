@@ -1,0 +1,15 @@
+.wrapper {
+  @apply bg-[linear-gradient(131deg,_#292929_29.55%,_#3c3c3c_100%)] shadow-[0_0_60px_0_rgba(6,6,12,0.5)] py-8 font-bold;
+}
+
+.inner {
+  @apply flex gap-5 justify-between flex-col md:flex-row;
+}
+
+.item {
+  @apply flex gap-5 items-center cursor-pointer flex-col md:flex-row;
+}
+
+.text {
+  @apply md:max-w-[200px];
+}

@@ -1,0 +1,19 @@
+.wrapper {
+  @apply py-10 md:py-[100px] relative bg-[url('/consultation/bg.svg')] bg-no-repeat bg-center bg-cover;
+
+  .inner {
+    @apply flex flex-col items-center;
+
+    > .title {
+      @apply title-default max-w-[1000px];
+    }
+
+    > .subtitle {
+      @apply subtitle-default;
+    }
+
+    > .form {
+      @apply flex gap-9 flex-col md:flex-row;
+    }
+  }
+}

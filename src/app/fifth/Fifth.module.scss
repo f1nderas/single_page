@@ -1,0 +1,41 @@
+.wrapper {
+  @apply py-10 relative md:py-[100px];
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+  }
+  &::before {
+    background-image: url("/fifth/bg-up.svg");
+    background-position: left bottom;
+  }
+  &::after {
+    background-image: url("/fifth/bg-down.svg");
+    background-position: right top;
+  }
+  .inner {
+    @apply flex flex-col items-center;
+
+    > .title {
+      @apply title-default max-w-[1000px];
+    }
+
+    > .subtitle {
+      @apply subtitle-default;
+
+      > span {
+        @apply font-bold;
+      }
+    }
+
+    > .form {
+      @apply flex gap-9 flex-col md:flex-row;
+    }
+  }
+}

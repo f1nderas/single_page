@@ -1,0 +1,34 @@
+.footer {
+  @apply bg-gradient-to-tr from-[#292929] to-[#3c3c3c];
+}
+
+.wrapper_up {
+  @apply font-bold py-7  md:shadow-[0_0_60px_0_rgba(6,6,12,0.5)] md:bg-gradient-to-tr from-[#292929] to-[#3c3c3c];
+
+  .inner {
+    @apply flex gap-5 items-center justify-between flex-col md:flex-row;
+
+    > .logo {
+      @apply border-b-2 border-[#1c1c1d] md:border-none flex justify-center w-full;
+    }
+  }
+  .nav {
+    @apply flex gap-7 justify-center w-full border-b-2 border-[#1c1c1d] md:border-none;
+  }
+
+  .phone {
+    @apply flex flex-col items-center md:flex-row gap-4 w-full border-b-2 border-[#1c1c1d] md:border-none;
+
+    > .phone_link {
+      @apply text-3xl;
+    }
+  }
+}
+
+.wrapper_down {
+  @apply text-xs text-[#bdbdbd] py-2 md:py-5;
+
+  .inner {
+    @apply flex justify-between items-center flex-col-reverse md:flex-row;
+  }
+}
